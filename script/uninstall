@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cd "$(dirname "$0")/.."
+
+echo "Uninstalling airsonos..."
+forever stop airsonos > /dev/null 2>&1
+launchctl unload ~/Library/LaunchAgents/org.airsonos.plist
+rm ~/Library/LaunchAgents/org.airsonos.plist

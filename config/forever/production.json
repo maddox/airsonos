@@ -1,0 +1,7 @@
+{
+  "uid": "airsonos",
+  "append": true,
+  "script": "bin/index.js",
+  "outFile": "log/logs.log",
+  "errFile": "log/error.log"
+}
